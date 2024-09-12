@@ -1,4 +1,4 @@
-[![a stylized convenience store](https://raw.githubusercontent.com/kaitwalla/mini-mart/main/resources/images/logo.svg)]
+![a stylized convenience store](https://raw.githubusercontent.com/kaitwalla/mini-mart/main/resources/images/logo.svg)
 
 # Mini-mart
 
