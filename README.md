@@ -23,8 +23,13 @@ With `REGISTER_USERS` set to true, you can visit /register to create a user for 
 ## API routes
 
 ```
-/set - requires a "key" and a "value" input. These values will be json_encoded for storage and sent back as a string. It's up to you to decode the value on the other end.
-/get/{key} - Returns the value of the key/value pair
+[POST] /set - requires a "key" and a "value" input. These values will be json_encoded for storage and sent back as a string. It's up to you to decode the value on the other end. If you use a non-unique key, you'll overwrite the existing value.
+[GET] /get/{key} - Returns the value of the key/value pair
+[DELETE] /delete/{key} - Deletes an existing key/value pair
 ```
 
-That's it.
+## Values
+
+- Raw strings will be returned as strings  
+- Raw booleans will be returned as string equivalents (`"true"` or `"false"`)  
+- Everything else should be returned as you stored them, JSON-encoded
