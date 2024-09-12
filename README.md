@@ -1,4 +1,4 @@
-![a stylized convenience store](https://raw.githubusercontent.com/kaitwalla/mini-mart/main/resources/images/logo.svg)
+<img src="https://raw.githubusercontent.com/kaitwalla/mini-mart/main/resources/images/logo.svg" width="60" alt="A stylized drawing of a convenience store">
 
 # Mini-mart
 
