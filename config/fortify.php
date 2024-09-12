@@ -2,6 +2,8 @@
 
 use Laravel\Fortify\Features;
 
+$registerUsers = (env('REGISTER_USERS', false)) ? [Features::registration()] : [];
+
 return [
 
     /*
@@ -144,7 +146,7 @@ return [
     */
 
     'features' => [
-        //Features::registration(),
+        ...$registerUsers,
         Features::resetPasswords(),
         // Features::emailVerification(),
         Features::updateProfileInformation(),
@@ -154,6 +156,6 @@ return [
             'confirmPassword' => true,
             // 'window' => 0,
         ]),
-    ],
+    ]
 
 ];
